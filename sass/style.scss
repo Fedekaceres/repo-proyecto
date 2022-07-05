@@ -1,0 +1,153 @@
+@import'header';
+@import 'maps';
+@import 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap');
+*{font-family: 'Iceberg', cursive;
+              }
+   
+  .fondO-Color {
+          @include gradients_fondo;
+         }            
+
+    // nav y aside destokp
+
+    .naV-Pyrmid{
+        margin: 3rem 2rem 0rem 0rem;
+        justify-content: space-between;
+        display: flex;
+
+
+         .lI-Nav{
+            list-style: none;
+             }
+
+         .A-Nav-destopk{
+            color: map-get($colores, $key:color-btn);
+            text-decoration: none;
+            &:hover{
+             transition: 1s;
+             font-size: 1.2rem;
+              color: #f857a6;  /* fallback for old browsers */
+                color: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+                  color: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                     }
+            }   
+    }
+
+    .asidE-Nav{
+          display: inline;
+
+    .asidE-Ul{
+        border-radius: 0rem 1rem 1rem 0rem;
+        background: #16222A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-decoration: none;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        padding-right: 3rem;
+        display: inline-flex;
+        flex-direction: column;
+
+        .li-aside {
+            
+            list-style: none;
+            padding: 0rem 0rem 0rem 0rem;
+            margin: 2rem 2rem 2rem 0rem;
+        }
+
+        .A-Aside{
+            padding-left: 1rem;
+            text-decoration: none;
+            color: map-get($colores , $key:color-btn );
+            
+        }
+       
+    }
+  }
+
+    //end nav aside
+    
+    // start cards
+    .card{
+        background: #acb6e5;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        cursor: pointer;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 8rem;
+        width: 20rem;
+
+        &:hover{
+            transition: 1s;
+            width: 21rem;
+        }
+      .card-text{
+        padding-right: 1rem;
+        margin-right: 3rem;
+        color: black;
+      }
+      .card-title{
+        color: black;
+      }
+    }
+
+
+    //start media 
+
+   @media (min-width: 768px){
+        .navbar{
+            display: none;
+        }
+
+    }
+
+
+
+    @media (max-width: 768px){
+    .videO-Pixels{
+        display: none;
+    }
+        
+        
+        .headeR-Pyramid{
+            display: none;
+        }
+
+                .naV-Pyrmid{
+            display: none;
+        }
+        .asidE-Nav{
+            display: none;
+        } 
+
+        .navbar{
+            .navbar-toggler{
+                border: none;
+                background: #acb6e5;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+            }
+            background: #0F2027;  /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .carousel{
+            margin-top: 5rem;
+        }
+
+        .dropdown{
+            margin-bottom:4rem;
+        }
+    }
+
+
+    
+  
+  
+    
